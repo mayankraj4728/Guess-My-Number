@@ -18,13 +18,13 @@ document.querySelector(".check").addEventListener("click", function () {
   if (!guess) {
     message("⛔️ No Number!");
   } else if (guess > randomNum) {
-    if (score > 1) {
+    if (score >= 1) {
       score--;
       scores(score);
       message("📈 TOO HIGH!");
     }
   } else if (guess < randomNum) {
-    if (score > 1) {
+    if (score >= 1) {
       score--;
       scores(score);
       message("📉 TOO LOW!");
